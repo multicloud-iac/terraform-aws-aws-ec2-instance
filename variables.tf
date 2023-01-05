@@ -2,13 +2,11 @@
 
 variable "name_prefix" {
   description = "Name prefix to use when naming resources."
-  default     = "demo-mkt-analysis"
 }
 
 variable "instance_type" {
   description = "type of EC2 instance to provision."
   default     = "t3.micro" # default
-  # default = "t3.xlarge" # upgrade t2.micro to t3.xlarge = cost increase violation
 }
 
 variable "ssh_cidr" {
